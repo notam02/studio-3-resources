@@ -55,13 +55,9 @@ installation guide, plugin descriptions and tutorials:
 ### Programming
 
 If you want to go deeper into the inner workings of ambisonics, we
-recommend you use the visual programming language
+recommend you use either [the Ambisonic Toolkit for SuperCollider](https://www.ambisonictoolkit.net/) or the visual programming language
 [Max/MSP](https://cycling74.com/) in conjunction with [IRCAM\'s
-Spat-package](https://forumnet.ircam.fr/product/spat-en/). Spat is
-immensely powerful and flexible and *the* cutting edge technology in
-ambisonics (as well as other immersive audio techniques). For an
-introduction to Spat, see this [video series by Bálint
-Laczkó](https://youtu.be/3lOI-1_ixDg).
+Spat-package](https://forumnet.ircam.fr/product/spat-en/). 
 
 How to get started with ambisonics in Studio 3
 ==============================================
