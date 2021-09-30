@@ -18,6 +18,7 @@ The SynthDef assumes that you are working with ATK format high order ambisonics 
 (
 ~ambixRefRadius = 10.0;
 ~order=5;
+~added=false;
 
 SynthDef(\decoder, {
 	arg bus=0, bypass=0;
@@ -76,11 +77,16 @@ SynthDef(\decoder, {
 
 		// s.sync;
 		~decoderController.editor;
+
+		~added = true;
 	}
 };
 
 ServerTree.add(~loadDecoder, s);
 s.waitForBoot{
-	~loadDecoder.value();
-}
+	s.waitForBoot{
+	if(~added.not, {
+		~loadDecoder.value();
+	})
+}}
 )
