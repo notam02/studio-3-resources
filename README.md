@@ -59,6 +59,12 @@ recommend you use either [the Ambisonic Toolkit for SuperCollider](https://www.a
 [Max/MSP](https://cycling74.com/) in conjunction with [IRCAM\'s
 Spat-package](https://forumnet.ircam.fr/product/spat-en/). 
 
+#### Examples
+
+This repository contains examples for different programming languages.
+
+There is a folder with faust-files containing decoders for the studio which may be converted to almost any format, as well as SuperCollider and Max examples.
+
 How to get started with ambisonics in Studio 3
 ==============================================
 
