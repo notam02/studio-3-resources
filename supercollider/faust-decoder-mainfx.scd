@@ -6,6 +6,8 @@ When the user hardstops, the synth is respawned automatically.
 
 It uses the faust-based decoders that are also available in this repository (Sirius5H5PSlepian242Band and Sirius5h5pAllrad5200REMax2Band).
 
+The SynthDef assumes that you are working with ATK format high order ambisonics and will accordingly reencode it to ambix before it hits the decoder.
+
 */
 (
 ~ambixRefRadius = 10.0;
