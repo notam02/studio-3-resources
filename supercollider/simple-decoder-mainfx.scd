@@ -16,14 +16,14 @@ The SynthDef assumes that you are working with ATK format high order ambisonics 
 
 */
 (
-~ambixRefRadius = 10.0;
+~studio3LSRadius = 2.5;  // Studio 3 average radius = 2.5 meters (thanks Joseph Anderson!)
 ~order=5;
 ~added=false;
 
 SynthDef(\decoder, {
 	arg bus=0, bypass=0;
 
-	var numChans = ((~order+1)**2).asInteger;
+	var numChans = ~order.asHoaOrder.size;
 	var sig = In.ar(bus, numChans);
 	var order = ~order;
 
@@ -36,7 +36,7 @@ SynthDef(\decoder, {
 	sig = HoaNFCtrl.ar(
 		in: sig,
 		encRadius: AtkHoa.refRadius,
-		decRadius: ~ambixRefRadius,
+		decRadius: ~studio3LSRadius,
 		order: order
 	);
 
