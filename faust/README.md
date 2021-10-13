@@ -1,5 +1,5 @@
 # Using the faust decoders
-These decoders were made using the [ambisonic decoder toolbox](https://bitbucket.org/ambidecodertoolbox/adt.git).
+This folder contains decoders designed for Studio 3 which were made using the [ambisonic decoder toolbox](https://bitbucket.org/ambidecodertoolbox/adt.git).
 
 They may be used to compile decoders for a range of software. 
 
