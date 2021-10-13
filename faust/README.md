@@ -47,4 +47,4 @@ rm -rf faust.*
 ### Usage
 Once compilation is done and succesful, recompile or restart SuperCollider and use the compiled plugins. 
 
-See [../supercollider/faust-decoder-mainfx.scd](this file) for an example of how to use it.
+See [this file](../supercollider/faust-decoder-mainfx.scd) for an example of how to use it.
